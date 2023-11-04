@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+}
+body{
+    background-color: #eaeaea;
+}
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+
+.arrivals h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 35px;
+}
+
+.arrivals .arrivals-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.arrivals .arrivals-box .arrivals-card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: 10px 20px;
+}
+
+.arrivals .arrivals-box .arrivals-card:hover{
+    box-shadow: 0 0 5px #080808;
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals-box .arrivals-card:hover .arrivals-image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag p{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals-icon{
+    color: #089d08;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag  .arrivals-btn{
+    padding: 8px 20px;
+    border: 2px solid #089d08;
+    text-decoration: none;
+    text-align: center;
+    color: #080808;
+}
+
+.arrivals .arrivals-box .arrivals-card .arrivals-tag  .arrivals-btn:hover{
+    color: #fff;
+    background-color: #089d08;
+}
+
+@media(max-width:1280px){
+    .arrivals .arrivals-box{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:990px){
+    .arrivals .arrivals-box{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:720px){
+    .arrivals .arrivals-box{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .arrivals h1{
+        text-align: center;
+        font-size: 38px;
+        margin: 35px;
+        margin-left: 20px;
+    }
+}
