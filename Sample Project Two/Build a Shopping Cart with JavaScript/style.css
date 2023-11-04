@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #134952;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.container h1{
+    color: #e9c214;
+}
+
+.container header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top:10px;
+}
+
+.container header .shopping{
+    position: relative;
+    text-align: right;
+}
+
+.shopping i{
+    font-size: 2.2rem;
+    padding-top: 20px;
+    color: #e9c214;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.shopping i:hover{
+    color: #edae0f;
+}
+
+.shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 80%;
+    padding: 3px 10px;
+
+}
+
+.container .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top:20px;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 450px;
+    background-color: #dadada;
+    border-left: 1px solid #0aa2c8;
+    height: 100vh;
+    transition: 0.5s;
+   
+}
+
+.active .card {
+    left: calc(100% - 450px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.card h1 {
+    color: #0aa2c8;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div{
+    background: #0aa2c8;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2){
+    background-color: #1c1f25;
+    color: #fff;
+}
+
+.card .checkOut .total{
+    font-size: 27px;
+}
+
+.card .checkOut .closeShopping{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/*=== after first typing script ===*/
+.list {
+    padding-bottom: 30px;
+}
+
+.list .item{
+    text-align: center;
+    background-color: #efefef;
+    padding: 20px;
+    box-shadow: 0 0px 50px #757676;
+    letter-spacing: 1px;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.list .item:hover{
+    background: #0b9fad;
+}
+
+.list .item img{
+    width: 60%;
+    height: 200px;
+}
+
+.list .item .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.list .item .price{
+    margin: 10px;
+}
+
+.list .item:hover .title,
+.list .item:hover .price{
+    color: #efefef;
+}
+
+.list .item button{
+    background: #efefef;
+    color: #560bad;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #560bad;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.list .item button:hover{
+    background: #560bad;
+    color: #efefef;
+}
+
+/*=== after second typing script ===*/
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    padding: 5px 0;
+    border-top: 1px solid #1c1f25;
+    border-bottom: 1px solid #1c1f25;
+}
+
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img{
+    width: 50%;
+}
+
+.listCard .count {
+    margin: 0 10px;
+    color: #1c1f25;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cardTitle,
+.cardPrice{
+    color: #1c1f25;
+}
+
+.cardButton{
+    width: 28px;
+    height: 28px;
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+

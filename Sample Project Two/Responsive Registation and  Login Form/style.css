@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: absolute;
+    bottom: 30%;
+    right: 120px;
+}
+
+.form-container span{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: #159aed;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 100px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 4px 10px;
+    font-size: 17px;
+
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 18px 0;
+    padding: 12px 0;
+    font-size: 18px;
+    background: #159aed;
+    color: #fff;
+    font-weight: 600;
+}
+
+form .btn:focus{
+    outline: none;
+    background: #117fc3;
+}
+
+#loginform{
+    left: -300px;
+}
+
+#register{
+    left: 0;
+}
+
+form a{
+    font-size: 14px;
+    color: #555;
+}
+

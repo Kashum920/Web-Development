@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title ------>
+    <title>Side Menu Login Page using HTML CSS JS</title>
+
+    <!---- customer css file ------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!---- font awesome cdn link ----->
+     <!-------- font awesome cdn link --------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <div class="main-container">
+        <span id="user-btn" class="fas fa-user"></span>
+    </div>
+
+
+    <div class="login-form-container">
+        <span id="close-login-btn" class="fas fa-times"></span>
+        <form action="">
+            <h3>Sign In</h3>
+            <span>Email</span>
+            <input type="email" class="box" placeholder="enter your email">
+            <span>Password</span>
+            <input type="password" class="box" placeholder="enter your password">
+
+            <div class="check-box">
+                <input type="checkbox" class="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" class="login-btn" value="sign in">
+            <p>remember password ? <a href="">click here</a></p>
+            <p>don't have an account ? <a href="">create one</a></p>
+        </form>
+    </div>
+
+    <script >
+
+            var loginForm = document.querySelector('.login-form-container');
+
+            document.querySelector('#user-btn').onclick = () => {
+                loginForm.classList.toggle('active');
+            }
+
+            document.querySelector('#close-login-btn').onclick = () =>{
+                loginForm.classList.remove('active');
+            }
+
+    </script>
+    
+</body>
+</html>

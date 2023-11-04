@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #444;
+    width: 100%;
+}
+
+.login-form-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: rgba(255,255,255,0.9);
+}
+
+.login-form-container.active{
+    right: 0;
+}
+
+.login-form-container form{
+    background: #fff;
+    border: 1px solid #666;
+    width: 40rem;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0 2px 2px #444;
+    border-radius: 7px;
+}
+
+.login-form-container form h3{
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-form-container form span{
+    padding-top: 1.7rem;
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: #666;
+    text-transform: none;
+}
+
+.login-form-container form .check-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.login-form-container form .check-box label{
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-form-container form .login-btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 1rem 0;
+    font-size: 22px;
+    font-weight: 500px;
+    color: #fff;
+    background: #fb2e2e;
+    border: 1px solid #fb2e2e;
+    cursor: pointer;
+}
+
+.login-form-container form .login-btn:hover{
+    background: #f10a0a;
+}
+
+.login-form-container form p{
+    padding-top: 0.8rem;
+    font-size: 18px;
+    color: #000;
+}
+
+.login-form-container form p a{
+    text-decoration: underline;
+    color: #666;
+}
+
+#close-login-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.main-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container .fas{
+    font-size: 4.5rem;
+    cursor: pointer;
+    color: #fff;
+}

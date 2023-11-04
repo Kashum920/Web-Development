@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title -->
+    <title>Responsive Registation and  Login Form</title>
+
+    <!---- customer css file ------>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+        <div class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./img/background-img.jpg" alt="" width="100%" height="900px">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+
+                            <form id="loginform">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot password</a>
+                            </form>
+
+                            <form id="register">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---- customer script file -->
+
+        <script>
+
+            var loginform = document.getElementById("loginform");
+            var regform = document.getElementById("register");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform = "translateX(0px)";
+                loginform.style.transform = "translateX(0px)";
+                indicator.style.transform = "translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(300px)";
+                indicator.style.transform = "translateX(0px)";
+            }
+
+        </script>
+
+</body>
+</html>
